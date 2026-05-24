@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      const links = {
+        "/b": "https://play.behr.dev",
+        "/d": "https://discord.behr.dev",
+        "/b1": "https://home.behr.dev/articles/dev-blog-1-landscape-sprites.html",
+        "/b2": "https://home.behr.dev/articles/dev-blog-2-elevation-webgl-multiplayer.html",
+        "/b3": "https://home.behr.dev/articles/dev-blog-3-webgl-landscape-multiplayer.html"
+      };
+
+      const path = window.location.pathname.toLowerCase();
+
+      if (links[path]) {
+        window.location.replace(links[path]);
+      } else {
+        window.location.replace("https://home.behr.dev");
+      }
+    </script>
+  </head>
+  <body>
+    <p>Locating destination...</p>
+  </body>
+</html>
